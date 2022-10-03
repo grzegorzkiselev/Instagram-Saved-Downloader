@@ -1,0 +1,36 @@
+{
+  "name": "Instagram Saved Dowloader",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "This script downloads images and push them to the author\u2019s folder",
+  "devtools_page": "devtools.html",
+  "permissions": [
+    "tabs",
+    "http://*/",
+    "https://*/",
+    "*://*/*",
+    "downloads",
+    "downloads.shelf"
+  ],
+  "background": {
+    "scripts": [
+      "/js/panel.js"
+    ]
+  },
+  "web_accessible_resources": [
+    "/js/jszip.min.js",
+    "/js/sketch-loader-for-ig.js",
+    "/js/sketch-loader-for-ig.js.map",
+    "/js/FileSaver.min.js.map",
+    "/js/state.js",
+    "/fonts/SF-Mono-Regular-subset.woff2"
+  ],
+  "icons": {
+    "16": "/images/icons/16w.jpg",
+    "48": "/images/icons/48w.jpg",
+    "128": "/images/icons/128w.jpg"
+  },
+  "browser_action": {
+    "default_icon": "/images/icons/128w.jpg"
+  }
+}

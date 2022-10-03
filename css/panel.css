@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "SF Mono";
+  src: url("../fonts/SF-Mono-Regular-subset.woff2") format('woff2')
+}
+
+*,
+*::after,
+*::before {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  margin-right: 8px;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 935px;
+  /* min-width: 400px; */
+  margin: auto;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.title {
+  display: block;
+  line-height: 100%;
+  margin-top: calc(32px - 24px * 0.345);
+}
+
+p {
+  line-height: 32px;
+  font-size: 1.5em;
+  margin-top: calc(1em - 0.6ch);
+}
+
+pre {
+  display: block;
+}
+
+pre>code {
+  font-family: "SF Mono", monospace;
+  color: #24292F;
+  padding: 0;
+  font-size: inherit;
+  white-space: unset;
+}
+
+#loading-container {
+  font-size: 16px;
+  background: #f6f8fa;
+  padding: 16px 32px 16px;
+  margin: 1em -32px;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-style: normal;
+}
+
+.author-card {
+  margin: 1em 0;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+.username {
+  display: inline-block;
+  font-weight: inherit;
+  line-height: 100%;
+}
+
+.images-container {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: repeat(auto-fill, 70px);
+}
+
+.data-image {
+  width: 70px;
+  height: 70px;
+  background-color: #f6f8fa;
+}
+
+.grid {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 0;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 31px;
+  background-color: aqua;
+}
+
+.username-input {
+  display: block;
+  margin: 0.6em 0 1em 0;
+}
+
+.image-selector {
+  display: block;
+  position: relative;
+  height: 100%;
+}
+
+.image-selector .image-checkbox {
+  display: block;
+  position: absolute;
+  font-size: 18px;
+  top: 4px;
+  left: 4px;
+  z-index: 1;
+  margin: 0;
+}
+
+.username-checkbox {
+  font-size: 18px;
+  margin: auto 4px;
+}
+
+.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

@@ -1,0 +1,47 @@
+<head>
+  <link rel="stylesheet" href="./css/panel.css">
+  <meta charset="UTF-8">
+</head>
+
+<body id="body">
+  <main class="wrapper">
+    <h1 class="title">Download saved posts</h1>
+    <section class="intro">
+      <p>This script will download all the saved posts and split them by the author</p>
+    </section>
+    <div class="buttons">
+      <button data-start>let’s try</button>
+      <button data-deselect-all class="hidden">uncheck all</button>
+      <button data-download class="hidden">download all</button>
+    </div>
+    <pre id="loading-container" class="hidden"><code id="loading-indicator"></code></pre>
+    <ul class="author-card-container unselectable" data-author-card-container>
+      <template data-author-card>
+        <li class="author-card">
+          <label class="username-selector">
+            <input type="checkbox" class="username-checkbox" checked>
+            <h2 class="username" data-author-username></h2>
+          </label>
+          <ul class="images-container" data-images-container>
+            <template data-image-element>
+              <li>
+                <label class="image-selector">
+                  <input type="checkbox" class="image-checkbox" checked>
+                  <img crossorigin src="#" alt="parsed image" data-image class="data-image">
+                </label>
+              </li>
+            </template>
+          </ul>
+        </li>
+    </ul>
+    </template>
+    </ul>
+  </main>
+</body>
+<script type="text/javascript" src="js/jszip.min.js"></script>
+<script type="text/javascript" src="js/jszip-utils.min.js"></script>
+<script type="text/javascript" src="js/FileSaver.min.js"></script>
+<script type="module" src="js/state.js"></script>
+<script type="module" src="js/panel.js"></script>
+
+</html>
