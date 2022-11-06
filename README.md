@@ -8,9 +8,9 @@ Open the Chrome Developer Options and open the tab called “Instagram Saver”.
 
 ## Features of the app
 
-To grab all the saved posts (single pictures and carousels) and group them into folders by the author.
+To grab all the saved posts (single pictures and carousels) and group them into folders by the user.
 
-To select the authors or some specific media: when the script grabbed the data (completed status and media thumbnails appeared) click on the preview picture and drag it through — checkboxes under the cursor will change their states according to the status of the checkbox property clicked firstly.
+To select the users or some specific media: when the script grabbed the data (completed status and media thumbnails appeared) click on the preview picture and drag it through — checkboxes under the cursor will change their states according to the status of the checkbox property clicked firstly.
 
 ## Possible to add
 
