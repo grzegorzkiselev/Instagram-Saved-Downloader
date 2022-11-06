@@ -1,21 +1,21 @@
 ## Installation
 
-Download the “unpacked” folder. Open chrome extencions page (chrome://extensions) and turn developer mode on. Refresh the page and press “load unpacked”. Done.
+Download the “unpacked” folder. Open the Chrome Extensions page (chrome://extensions) and turn developer mode on. Refresh the page and click “load unpacked”. Upload the folder downloaded at the very beginning. Done.
 
 ## Usage
 
-Open Chrome Developer Options and open the tab called “Instagram Saver”.
+Open the Chrome Developer Options and open the tab called “Instagram Saver”.
 
-## What it can
+## Features of the app
 
-It can grab all the saved posts (single pictures and carouseles) and group it into folders by the author. 
+To grab all the saved posts (single pictures and carousels) and group them into folders by the author.
 
-You can select the authors or specific media: after the script grab your data (you will completed status and media thumbnails), click on the preview and drag over — checkbox under the cursor will change their state according the clicked checkbox status.
+To select the authors or some specific media: when the script grabbed the data (completed status and media thumbnails appeared) click on the preview picture and drag it through — checkboxes under the cursor will change their states according to the status of the checkbox property clicked firstly.
 
-## What it can’t do
+## Possible to add
 
-Video downloading and carousels grouping is not provided. All the files have random unmeaningful names.
+Downloading videos, grouping of carousels and meaningful filenames could be provided.
 
 ## Disclaimer
 
-I’m a diletant and my code may not be that good. I hope it will work at least. If not — I’m sorry :—(
+I’m a beginner and the code may be not that good. I hope it's working at least. If it's not — I’m sorry and you’re welcome to open an issue.
