@@ -4,7 +4,7 @@ Download the “unpacked” folder. Open the Chrome Extensions page (chrome://ex
 
 ## Usage
 
-Open the Chrome Developer Options and open the tab called “Instagram Saver”.
+Open the tab called “Instagram Saver” in the Chrome Developer Options.
 
 ## Features of the app
 
