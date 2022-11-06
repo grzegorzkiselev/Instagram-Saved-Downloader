@@ -120,6 +120,7 @@ class State {
     this.showPreloader()
     this.controls.intro.classList.add("hidden")
     this.controls.startButton.textContent = "abort"
+    this.controls.startButton.removeAttribute("disabled")
     this.controls.downloadButton.classList.add("hidden")
     this.controls.deselectAllButton.classList.add("hidden")
     this.controls.loadingContainer.classList.remove("hidden")
@@ -130,6 +131,7 @@ class State {
   COMPLETED_UI_STATE() {
     this.hidePreloader()
     this.controls.startButton.textContent = "try again"
+    this.controls.startButton.removeAttribute("disabled")
     this.controls.downloadButton.classList.remove("hidden")
     this.controls.deselectAllButton.classList.add("hidden")
     this.controls.loadingIndicator.textContent = "completed"
@@ -141,6 +143,7 @@ class State {
     this.controls.title.textContent = "Download saved posts"
     this.controls.intro.classList.add("hidden")
     this.controls.startButton.textContent = "try again"
+    this.controls.startButton.removeAttribute("disabled")
     this.controls.downloadButton.classList.add("hidden")
     this.controls.deselectAllButton.classList.add("hidden")
     this.controls.loadingContainer.classList.add("hidden")
@@ -151,10 +154,12 @@ class State {
   BACKING_COLLECTION_UI_STATE() {
     this.controls.downloadButton.textContent = "backing..."
     this.controls.downloadButton.setAttribute("disabled", "")
+    this.controls.startButton.setAttribute("disabled", "")
     this.controls.deselectAllButton.classList.add("hidden")
     this.state = "BACKING_COLLECTION_UI_STATE"
   }
   EMPTY_COLLECTION_UI_STATE() {
+    this.controls.startButton.removeAttribute("disabled")
     this.controls.downloadButton.textContent = "nothing to download"
     this.controls.downloadButton.setAttribute("disabled", "")
     this.controls.deselectAllButton.classList.remove("hidden")
@@ -162,15 +167,17 @@ class State {
     this.state = "EMPTY_COLLECTION_UI_STATE"
   }
   FULL_COLLECTION_UI_STATE() {
+    this.controls.startButton.removeAttribute("disabled")
     this.controls.downloadButton.textContent = "download all"
-    this.controls.downloadButton.removeAttribute("disabled", "")
+    this.controls.downloadButton.removeAttribute("disabled")
     this.controls.deselectAllButton.classList.remove("hidden")
     this.controls.deselectAllButton.textContent = "uncheck all"
     this.state = "FULL_COLLECTION_UI_STATE"
   }
   MODIFIED_COLLECTION_UI_STATE() {
+    this.controls.startButton.removeAttribute("disabled")
     this.controls.downloadButton.textContent = "download selected"
-    this.controls.downloadButton.removeAttribute("disabled", "")
+    this.controls.downloadButton.removeAttribute("disabled")
     this.controls.deselectAllButton.classList.remove("hidden")
     this.controls.deselectAllButton.textContent = "uncheck all"
     this.state = "MODIFIED_COLLECTION_UI_STATE"

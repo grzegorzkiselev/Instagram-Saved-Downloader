@@ -43,13 +43,14 @@ let application = {
     state.BACKING_COLLECTION_UI_STATE()
     for (const username in selected) {
       const folder = this.zip.folder(`${username}`)
-
       selected[username].forEach(url => {
         const imageToDownoad = new Promise(function (resolve, reject) {
           JSZipUtils.getBinaryContent(url, function (err, data) {
             if (err) {
+              console.log(url)
               reject(err);
             } else {
+              console.log(url)
               resolve(data);
             }
           });
@@ -60,7 +61,7 @@ let application = {
         imageToDownoad.then((data, link) => {
           let fileName = data.byteLength
           this.counter += 1
-          controls.loadingIndicator.textContent = `chopping ${this.counter}’th image of ${this.promises.length}`
+          controls.loadingIndicator.textContent = `chopped ${this.counter}’th image of ${this.promises.length}`
           folder.file(`${fileName}.jpg`, data, {
             binary: true
           })
@@ -73,6 +74,7 @@ let application = {
             type: "blob"
           })
           .then((content) => {
+            console.log(content)
             saveAs(content, "saved-posts.zip");
             controls.downloadButton.classList.remove("hidden")
             // controls.downloadButton.addEventListener("click", function () {
