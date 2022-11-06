@@ -18,4 +18,4 @@ Downloading videos, grouping of carousels and meaningful filenames could be prov
 
 ## Disclaimer
 
-I’m a beginner and the code may be not that good. I hope it's working at least. If it's not — I’m sorry and you’re welcome to open an issue.
+I’m a beginner and the code may be not that good. I hope it’s working at least. If it’s not — I’m sorry and you’re welcome to open an issue.
